@@ -40,6 +40,7 @@ print(res)
 fun = lambda a,b:a+b
 res = fun(2,5)
 print(res)
+
 #filter
 def even(a):
     return a%2==0
@@ -66,6 +67,32 @@ ans = set(filter(lambda a:a%2==0,numbers))
 print(ans)
 
 ans = set(filter(lambda a:a%2==0,range(11)))
+print(ans)
+
+# map()
+def squares(a):
+    return a**2
+numbers = [1,2,3,4,5]
+ans = list(map(squares,numbers))
+print(ans)
+
+def squares_1(b):
+    return b**2
+numbers_1 = [1,2,3,4,5]
+res = list(filter(squares_1,numbers_1))
+print(res)
+
+def squares(a):
+    return a%2==0
+numbers=[1,2,3,4,5]
+ans=list(map(squares,numbers))
+print(ans)
+
+numbers=[1,2,3,4,5]
+ans = list(map(lambda a:a**2,numbers))
+print(ans)
+
+ans = list(map(lambda a:a**2,range(6)))
 print(ans)
 
 
